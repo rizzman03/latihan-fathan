@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #3c3836;
+}
+
+body {
+  font-family: "Climate Crisis", sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #fbf1c7;
+    background-color: #1d2021;
+}
+
+div.logo {
+background-color: #1d2021;
+}
+
+div.logo img {
+    width: 100px;
+    cursor: pointer;
+    background-color: #1d2021;
+}
+
+nav.navbar {
+background-color: #1d2021;
+}
+
+div.nav-content {
+  display: flex;
+  padding-top: 20px;
+  gap: 2rem;
+  background-color: #1d2021;
+}
+
+div.nav-content a {
+  color: #fbf1c7;
+  text-decoration: none;
+  border-radius: 999px;
+  background-color: #1d2021;
+  font-weight: 100;
+  
+  }
+
+  div.nav-content a:hover {
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+  }
+
+div.content {
+  padding: 20px;
+  margin: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 10vh;
+}
+
+div.article {
+display: flex;
+gap: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 1px #fbf1c7;
+  width: 100%;
+}
+
+div.article article img {
+  width: 100%;
+}
+
+div.article article p {
+  display: flex;
+  padding: 20px;
+  background-color: #fbf1c7;
+}
+
+aside {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d2021;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #1d2021;
+}
+
+div.info p {
+  font-size: 12px;
+  color: #fb4934;;
+  background-color: #1d2021;
+}
+
+div.info div.information {
+  display: flex;
+  gap: 1rem;
+  background-color: #1d2021;
+}
+div.info div.information a {
+  background-color: #1d2021;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fb4934;
+}
+
+div.info div.information a:hover {
+  font-weight: bold;
+}
+
+@media  screen and (max-width: 765px) {
+
+
+
+  div.nav-content {
+  display: flex;
+  padding-top: 20px;
+  gap: 2rem;
+  background-color: #1d2021;
+  flex-direction: column;
+  
+}
+
+div.article {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+
+}
