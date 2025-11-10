@@ -5,14 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     addTodo();
   });
   function addTodo() {
-    const todos = [];
-    const RENDER_EVENT = "render-todo";
-
     const textTodo = document.getElementById("title").value;
     const timestamp = document.getElementById("date").value;
 
     const generatedID = generateId();
-    const todoObject = generatedTodoObject(
+    const todoObject = generateTodoObject(
       generatedID,
       textTodo,
       timestamp,
@@ -26,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return +new Date();
     }
 
-    function generatedTodoObject(id, task, timestamp, isCompleted) {
+    function generateTodoObject(id, task, timestamp, isCompleted) {
       return {
         id,
         task,
@@ -34,8 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
         isCompleted,
       };
     }
-    document.addEventListener(RENDER_EVENT, function () {
-      console.log(todos);
-    });
   }
+
+  document.addEventListener(RENDER_EVENT, function () {
+    console.log(todos);
+  });
 });
